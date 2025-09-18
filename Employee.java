@@ -31,20 +31,39 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        
+        int legalAgeToDrive = 16;
+        if(age>= legalAgeToDrive){
+            system.out.println("Yes, can drive.");
+        }else{
+            int yearsOfWaiting = legalAgeToDrive - age;
+            system.out.println("No cannot drive and needs to wait : " 
+            + yearsOfWaiting + " years")
+        }
+        return boolean
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        // to be completed
+        int roughSalary;
+        int taxRate;
+        int taxes;
+        int netPay;
+        roughSalary = unpaidHours * hourlyWage;
+        taxRate = 30;
+        taxes = roughSalary/30;
+        netPay = roughSalary - taxes;
+        return netPay;
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        int paidSalary = calculatePay();
+        system.out.println("fullname has recieved a wire transfer of " +
+        paidSalary + " CAD");
+        unpaidHours = 0;
     }
 }

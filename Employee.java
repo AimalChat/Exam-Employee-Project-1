@@ -37,7 +37,7 @@ public class Employee{
         }else{
             int yearsOfWaiting = legalAgeToDrive - age;
             system.out.println("No cannot drive and needs to wait : " 
-            + yearsOfWaiting + " years")
+            + yearsOfWaiting + " years");
         }
         return boolean
     }
@@ -52,7 +52,7 @@ public class Employee{
         int netPay;
         roughSalary = unpaidHours * hourlyWage;
         taxRate = 30;
-        taxes = roughSalary/30;
+        taxes = roughSalary/taxRate;
         netPay = roughSalary - taxes;
         return netPay;
     }

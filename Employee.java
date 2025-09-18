@@ -49,10 +49,10 @@ public class Employee{
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        int roughSalary;
-        int taxRate;
-        int taxes;
-        int netPay;
+        double roughSalary;
+        double taxRate;
+        double taxes;
+        double netPay;
         roughSalary = unpaidHours * hourlyWage;
         taxRate = 30/100;
         taxes = roughSalary * taxRate;
@@ -64,7 +64,7 @@ public class Employee{
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        int paidSalary = calculatePay();
+        double paidSalary = calculatePay();
         system.out.println(fullname + " has recieved a wire transfer of " + 
         paidSalary + " $CAD");
         unpaidHours = 0;

@@ -34,11 +34,11 @@ public class Employee{
         int legalAgeToDrive = 16;
         boolean canDrive;
         if(age>= legalAgeToDrive){
-            system.out.println("Yes, can drive.");
+            System.out.println("Yes, can drive.");
             canDrive = true;
         }else{
             int yearsOfWaiting = legalAgeToDrive - age;
-            system.out.println("No cannot drive and needs to wait : " 
+            System.out.println("No cannot drive and needs to wait : " 
             + yearsOfWaiting + " years");
             canDrive = false;
         }
@@ -65,7 +65,7 @@ public class Employee{
      */
     public void paySalary(){
         double paidSalary = calculatePay();
-        system.out.println(fullname + " has recieved a wire transfer of " + 
+        System.out.println(fullname + " has recieved a wire transfer of " + 
         paidSalary + " $CAD");
         unpaidHours = 0;
     }

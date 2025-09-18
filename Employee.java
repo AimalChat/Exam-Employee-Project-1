@@ -16,7 +16,7 @@ public class Employee{
         this.yearOfBirth = yearOfBirth;
         this.hourlyWage = hourlyWage;
         onLeave = false;
-        unpaidHours = 0.0;
+        unpaidHours = 10.0;
     }
     
     /**

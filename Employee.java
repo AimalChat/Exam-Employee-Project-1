@@ -32,14 +32,17 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         int legalAgeToDrive = 16;
+        boolean canDrive;
         if(age>= legalAgeToDrive){
             system.out.println("Yes, can drive.");
+            canDrive = true;
         }else{
             int yearsOfWaiting = legalAgeToDrive - age;
             system.out.println("No cannot drive and needs to wait : " 
             + yearsOfWaiting + " years");
+            canDrive = false;
         }
-        return boolean
+        return canDrive;
     }
 
     /*

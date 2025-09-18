@@ -38,8 +38,8 @@ public class Employee{
             canDrive = true;
         }else{
             int yearsOfWaiting = legalAgeToDrive - age;
-            System.out.println("No cannot drive and needs to wait : " 
-            + yearsOfWaiting + " years");
+            System.out.println("No, cannot drive and needs to wait : " 
+            + yearsOfWaiting + " years.");
             canDrive = false;
         }
         return canDrive;

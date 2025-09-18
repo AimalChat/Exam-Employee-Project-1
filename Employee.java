@@ -54,8 +54,8 @@ public class Employee{
         int taxes;
         int netPay;
         roughSalary = unpaidHours * hourlyWage;
-        taxRate = 30;
-        taxes = roughSalary/taxRate;
+        taxRate = 30/100;
+        taxes = roughSalary * taxRate;
         netPay = roughSalary - taxes;
         return netPay;
     }

@@ -54,7 +54,7 @@ public class Employee{
         double taxes;
         double netPay;
         roughSalary = unpaidHours * hourlyWage;
-        taxRate = 30/100;
+        taxRate = 0.3;
         taxes = roughSalary * taxRate;
         netPay = roughSalary - taxes;
         return netPay;
